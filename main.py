@@ -207,7 +207,7 @@ YELLOW = display.create_pen(255, 255, 0)
 WIFI_SSID = 'Hoops'
 WIFI_PASSWORD = 'H00p3rw1r3l355?'
 # NightScout Settings
-NIGHTSCOUT_URL = "https://hoopsnas.synology.me:1338/"
+NIGHTSCOUT_URL = "https://nightscout.hoops.nz/"
 NIGHTSCOUT_TOKEN = "display-6a046d5c21d47346"
 # TimeZone Configuration
 UTC_OFFSET = +12
