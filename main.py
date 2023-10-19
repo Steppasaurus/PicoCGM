@@ -11,7 +11,7 @@ from picographics import PicoGraphics, DISPLAY_PICO_DISPLAY_2, PEN_P4
 def wifi_connect():
     display_message('Connecting...')
 
-    rp2.country('GB')
+    rp2.country('NZ')
     wlan = network.WLAN(network.STA_IF)
     wlan.config(hostname = 'PicoCGM')
     wlan.active(True)
@@ -204,14 +204,14 @@ YELLOW = display.create_pen(255, 255, 0)
 # User Configurable Settings
 ################################################################
 # Wi-FI Settings
-WIFI_SSID = 'Your_SSID'
-WIFI_PASSWORD = 'Your_Password'
+WIFI_SSID = 'Hoops'
+WIFI_PASSWORD = 'H00p3rw1r3l355?'
 # NightScout Settings
-NIGHTSCOUT_URL = "https://nightscout.YourDomain.org"
-NIGHTSCOUT_TOKEN = "Pico-0000111122223333"
+NIGHTSCOUT_URL = "https://hoopsnas.synology.me:1338/"
+NIGHTSCOUT_TOKEN = "display-6a046d5c21d47346"
 # TimeZone Configuration
-UTC_OFFSET = -5
-DST = False  # Daylight Saving Time
+UTC_OFFSET = +12
+DST = True  # Daylight Saving Time
 # Min/Max Scale for Blood Glucose in mg/dL
 y_scale_min = 54    #  3mmol
 y_scale_max = 414   # 23mmol 
