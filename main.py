@@ -215,7 +215,7 @@ DST = True  # Daylight Saving Time
 # Min/Max Scale for Blood Glucose in mg/dL
 y_scale_min = 54    #  3mmol
 y_scale_max = 414   # 23mmol 
-mmol = False   # Controls if to display mmol/L instead of mg/dL
+mmol = True   # Controls if to display mmol/L instead of mg/dL
 
 wlan = wifi_connect()
 
@@ -235,21 +235,3 @@ while True:
     check_buttons(data)
     time.sleep_ms(100)
     
-
-
-################################################################
-# User Configurable Settings
-################################################################
-# Wi-FI Settings
-WIFI_SSID = 'Your_SSID'
-WIFI_PASSWORD = 'Your_Wifi_Password'
-# NightScout Settings
-NIGHTSCOUT_URL = "https://nightscout.mydomain.org"
-NIGHTSCOUT_TOKEN = "mytoken-25b31fd888888882"
-# TimeZone Configuration
-UTC_OFFSET = 0
-DST = True  # Daylight Saving Time
-# Min/Max Scale for Blood Glucose in mg/dL
-y_scale_min = 54    #  3mmol
-y_scale_max = 414   # 23mmol 
-mmol = True   # Controls if to display mmol/L instead of mg/dL
